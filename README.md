@@ -18,7 +18,8 @@ While we are still working on finding the right tools and writing the scripts, I
 Initiated the web browser using selenium  
 
 ## Useful Links and Sources Consulted
-https://www.selenium.dev/documentation/
+- Selenium Documentation: https://www.selenium.dev/documentation/
+- Web driver Documentation: https://w3c.github.io/webdriver/#is-element-selected 
 
 
 ---
