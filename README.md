@@ -3,7 +3,7 @@
 ## Introduction 
 This project is part of a research sponsored by Charles Resarch Center at College of William and Mary in Virginia, U.S.A. Our plan is to create a open-source database of eviction data in Williamsburg and James City County. This involves web scraping from online docket (http://ewsocis1.courts.state.va.us/CJISWeb/circuit.jsp) and manually gather information from the court. A more detailed and accurate methodology would be updated later.
 
-While we are still working on finding the right tools and writing the scripts, I would welcome any insights in the project. Feel free to contact me on matrix lolitsme:matrix.org or mastodon y_x at mastodon.social  for any questions/comments. My email address is yxiao03@wm.edu. I am on the very beginning stage of learning computer science and web scraping, so any advice would be appreciated. If you want to make any contributions, please use pull request. 
+While we are still working on finding the right tools and writing the scripts, I would welcome any insights in the project. Feel free to contact me on matrix lolitsme:matrix.org or mastodon y_x at mastodon.social  for any questions/comments.You can also email me at: yxiao03@wm.edu. Still a newbie in web scraping, and any advice would be appreciated. If you want to make any contributions, please use pull request. 
 
 ## TO-DO
 
@@ -17,7 +17,7 @@ While we are still working on finding the right tools and writing the scripts, I
 ### 2022.05.08
 Problem: entering dates need to clear the text box first, but it shows that it's not editable
 
-### 2022.05.07---  
+### 2022.05.07
 Initiated the web browser using selenium  
 
 ## Useful Links and Sources Consulted
@@ -39,4 +39,4 @@ This work is licensed under a
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 
-No commercial use allowed. 
+AKA No commercial use. 
