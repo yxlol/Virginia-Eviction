@@ -3,7 +3,7 @@
 ## Introduction 
 This project is part of a research sponsored by Charles Resarch Center at College of William and Mary in Virginia, U.S.A. Our plan is to create a open-source database of eviction data in Williamsburg and James City County. This involves web scraping from online docket (http://ewsocis1.courts.state.va.us/CJISWeb/circuit.jsp) and manually gather information from the court. A more detailed and accurate methodology would be updated later.
 
-While we are still working on finding the right tools and writing the scripts, I would welcome any insights in the project. Feel free to contact me on matrix @lolitsme:matrix.org or mastodon @y_x@mastodon.social  for any questions/comments. I am on the very beginning stage of learning computer science and web scraping, so any advice would be appreciated. If you want to make any contributions, please use pull request. 
+While we are still working on finding the right tools and writing the scripts, I would welcome any insights in the project. Feel free to contact me on matrix @lolitsme:matrix.org or mastodon y_x at mastodon.social  for any questions/comments. I am on the very beginning stage of learning computer science and web scraping, so any advice would be appreciated. If you want to make any contributions, please use pull request. 
 
 ## To-dO
 
