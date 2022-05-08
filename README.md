@@ -8,13 +8,16 @@ While we are still working on finding the right tools and writing the scripts, I
 ## TO-DO
 
 - [x] Find the right library to use (see update on 2022.05.07)
-- [ ] How to randomize the scraping frequency? 
-- [ ] How to scrape data of eviction?
-- [ ] How to convert the data scraped to excel file?
+- [ ] Randomize the scraping frequency
+- [ ] Scrape data of eviction
+- [ ] Convert the data scraped to excel file
 
 ## Progress Update
 
----2022.05.07---  
+### 2022.05.08
+Problem: entering dates need to clear the text box first, but it shows that it's not editable
+
+### 2022.05.07---  
 Initiated the web browser using selenium  
 
 ## Useful Links and Sources Consulted
