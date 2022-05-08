@@ -5,7 +5,7 @@ This project is part of a research sponsored by Charles Resarch Center at Colleg
 
 While we are still working on finding the right tools and writing the scripts, I would welcome any insights in the project. Feel free to contact me on matrix lolitsme:matrix.org or mastodon y_x at mastodon.social  for any questions/comments. My email address is yxiao03@wm.edu. I am on the very beginning stage of learning computer science and web scraping, so any advice would be appreciated. If you want to make any contributions, please use pull request. 
 
-## To-dO
+## TO-DO
 
 - [x] Find the right library to use (see update on 2022.05.07)
 - [ ] How to randomize the scraping frequency? 
