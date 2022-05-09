@@ -28,16 +28,21 @@ xpath_w = '//*[@id="BackgroundWhite"]/table/tbody/tr[2]/td/table[1]/tbody/tr[1]/
 xpath_submit = '//*[@id="courtSubmit"]'
 xpath_date_box = '//*[@id="BackgroundWhite"]/td/table[2]/tbody/tr/td/table[2]/tbody/tr/td[2]'
 date = Date_Generator()
+date.date_input(1,1,2022,0)
 # Needs modification... date_str = 
+xpath_civil = '//*[@id="fontBoldExample"]/input[2]'
 driver.find_element(by=By.XPATH, value=xpath).click()
-driver.implicitly_wait(3)
+driver.implicitly_wait(8)
 driver.find_element(by=By.XPATH, value=xpath_w).click()
-driver.implicitly_wait(4)
+driver.implicitly_wait(10)
 driver.find_element(by=By.XPATH, value=xpath_submit).click()
-driver.implicitly_wait(4)
+driver.implicitly_wait(10)
+driver.find_element(by=By.XPATH, value=xpath_civil).click()
 SearchInput = driver.find_element(by = By.XPATH, value=xpath_date_box)
-#SearchInput.click().click().click() -- triple click does not work.
-#SearchInput.clear()
+element = driver.find_element(by = By.ID, value = "selectCheck")
+element.clear()
+#driver.find_element(by = By.XPATH, value = xpath_date_box).send_keys("01012022" + Keys.ENTER).perform()
+#for i in date.date_input(1,1,2022,0):
 #SearchInput.send_keys(date_str + Keys.ENTER)
 
 ## Take action on element
