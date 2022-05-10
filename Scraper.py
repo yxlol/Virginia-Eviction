@@ -1,15 +1,13 @@
 ## Import Selenium Library (needs installation, refer to https://www.selenium.dev/documentation/webdriver/) and Firefox webdriver. 
 ## Editor's Draft is here: https://w3c.github.io/webdriver/#is-element-selected 
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from Date_Generator import Date_Generator 
-
-
-
-driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from Date_Generator import Date_Generator
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+# from webdriver_manager.firefox import GeckoDriverManager
 
 ## Start the session.
 ## This is the database that covers the majority of Circuit Courts information in Virginia, besides Circuit Courts of Alexandria and Fairfax.
@@ -41,7 +39,7 @@ driver.find_element(by=By.XPATH, value=xpath_civil).click()
 SearchInput = driver.find_element(by = By.XPATH, value=xpath_date_box)
 element = driver.find_element(by = By.ID, value = "selectCheck")
 element.clear()
-#driver.find_element(by = By.XPATH, value = xpath_date_box).send_keys("01012022" + Keys.ENTER).perform()
+driver.find_element(by = By.XPATH, value = xpath_date_box).send_keys("01012022" + Keys.ENTER).perform()
 #for i in date.date_input(1,1,2022,0):
 #SearchInput.send_keys(date_str + Keys.ENTER)
 
