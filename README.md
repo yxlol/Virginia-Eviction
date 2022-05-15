@@ -19,69 +19,12 @@ While we are still working on finding the right tools and writing the scripts, I
 
 ## Progress Update
 
+### 2020.05.15
+hidden tag problem resolvd (copy the full xpath)
+
 ### 2022.05.08
 Progress: date box cleared; date string generate script completed
 Problem: tag indicates that it's hidden
-
-Error Message (using firefox):
-
-```
-Traceback (most recent call last):
-  File "Scraper.py", line 44, in <module>
-    driver.find_element(by = By.XPATH, value = xpath_date_box).send_keys("01012022" + Keys.ENTER).perform()
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 570, in send_keys
-    self._execute(Command.SEND_KEYS_TO_ELEMENT,
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 740, in _execute
-    return self._parent.execute(command, params)
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementNotInteractableException: Message: Element <td> is not reachable by keyboard
-```
-Error Messagae (using chrome):
-
-```
-Get LATEST chromedriver version for 101.0.4951 google-chrome
-Driver [/Users/.wdm/drivers/chromedriver/mac64/101.0.4951.41/chromedriver] found in cache
-Traceback (most recent call last):
-  File "Scraper.py", line 42, in <module>
-    driver.find_element(by = By.XPATH, value = xpath_date_box).send_keys("01012022" + Keys.ENTER).perform()
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 570, in send_keys
-    self._execute(Command.SEND_KEYS_TO_ELEMENT,
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 740, in _execute
-    return self._parent.execute(command, params)
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "/opt/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=101.0.4951.54)
-Stacktrace:
-0   chromedriver                        0x00000001033692c9 chromedriver + 5120713
-1   chromedriver                        0x00000001032f7e33 chromedriver + 4656691
-2   chromedriver                        0x0000000102ee700f chromedriver + 393231
-3   chromedriver                        0x0000000102f161af chromedriver + 586159
-4   chromedriver                        0x0000000102f1579d chromedriver + 583581
-5   chromedriver                        0x0000000102f39482 chromedriver + 730242
-6   chromedriver                        0x0000000102f10b05 chromedriver + 563973
-7   chromedriver                        0x0000000102f3958e chromedriver + 730510
-8   chromedriver                        0x0000000102f4bf41 chromedriver + 806721
-9   chromedriver                        0x0000000102f39373 chromedriver + 729971
-10  chromedriver                        0x0000000102f0f609 chromedriver + 558601
-11  chromedriver                        0x0000000102f10635 chromedriver + 562741
-12  chromedriver                        0x000000010333bb1d chromedriver + 4934429
-13  chromedriver                        0x0000000103340295 chromedriver + 4952725
-14  chromedriver                        0x00000001033453cf chromedriver + 4973519
-15  chromedriver                        0x0000000103340cba chromedriver + 4955322
-16  chromedriver                        0x000000010331b37c chromedriver + 4801404
-17  chromedriver                        0x000000010335ac68 chromedriver + 5061736
-18  chromedriver                        0x000000010335adef chromedriver + 5062127
-19  chromedriver                        0x00000001033705e5 chromedriver + 5150181
-20  libsystem_pthread.dylib             0x00007ff8130c64e1 _pthread_start + 125
-21  libsystem_pthread.dylib             0x00007ff8130c1f6b thread_start + 15
-```
-
 
 ### 2022.05.07
 Initiated the web browser using selenium  
@@ -90,6 +33,10 @@ Initiated the web browser using selenium
 - Selenium Documentation: https://www.selenium.dev/documentation/
 - Web driver Documentation: https://w3c.github.io/webdriver/#is-element-selected 
 
+## On Eviction
+
+- [The Scarlet E: Unmasking America’s Eviction Crisis](https://www.wnycstudios.org/podcasts/otm/scarlet-e-unmasking-americas-eviction-crisis)
+- [Inaccuracies in Eviction Records: Implications for Renters and Researchers](https://www.tandfonline.com/doi/full/10.1080/10511482.2020.1748084)
 
 ---
 
