@@ -29,7 +29,7 @@ class Date_Generator:
         else:
             self.__month = str(month)
         self.__year = str(year)
-        string_date =  self.__month + self.__day + self.__year
+        string_date =  self.__month + '/' + self.__day + '/' + self.__year
         return str(string_date)
     
     def __str__(self):
