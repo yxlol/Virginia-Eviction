@@ -1,18 +1,16 @@
 # Eviction Case Data Scraping Project
 
 ## Introduction 
-This project is part of a research sponsored by Charles Center at College of William and Mary in Virginia, United States. Our plan is to create a open-source database of eviction data in Williamsburg and James City County. This involves web scraping from online docket (http://ewsocis1.courts.state.va.us/CJISWeb/circuit.jsp) and manually gather information from the court. A more detailed and accurate methodology would be updated later.
 
-## TO-DO
+Virginia is the top evicting state in the United States according to the Princeton Eviction Lab. Yet Williamsburg and James City County have little to no data available investigating evictions. This project aims at providing a comprehensive and accurate dataset of the years 2019 and 2020 in Williamsburg and James City County by collecting information from the area’s general district court’s docket and clerks' office to add to previous research done in the year 2021. Our summer work included creating a more efficient data scraping tool that was implemented to increase accuracy and speed in collecting data from the court docket and creating data sets for the years 2019 and 2020. We will further our investigation by analyzing our data by types of landlords (corporate vs. individuals), results of eviction cases, and geographical information to provide eviction information in our community.
 
-- [x] Find the right library to use (see update on 2022.05.07)
-- [x] Randomize the scraping frequency
-- [ ] Scrape data of eviction
-- [x] Convert the data scraped to excel file
-- [ ] Update Methodology
+This project is part of a research sponsored by Charles Center at College of William and Mary in Virginia, United States. 
+
 
 ## Progress Update
 
+### 2022.07.31
+All the scrapers have been finalized. Needs comment on the files.
 
 ### 2022.06.23   
 Scraping case summary completed
