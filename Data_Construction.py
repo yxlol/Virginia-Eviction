@@ -5,7 +5,6 @@ import openpyxl
 class Data_Construction:
     def __init__(self):
         self.__date = None
-        self.__total_rows = 1
         self.__df = None
     
     def clean_data(self,raw_data, date):
@@ -28,10 +27,9 @@ class Data_Construction:
         frames = [self.__df, df]
         self.__df = pd.concat(frames)
         #df.to_excel('test.xlxs')
-        self.__total_rows += len(raw_data)
         
     def dataframe(self):
         return self.__df
 
     def to_csv(self):
-        return self.__df.to_excel('UD1907.xlsx')
+        return self.__df.to_excel('220725.xlsx')
