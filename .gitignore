@@ -1,7 +1,8 @@
 
-Testings.ipynb
+*.ipynb
 case scrape.side
 geckodriver.log
 *.pyc
 .DS_Store
 chromedriver
+*.xlsx
