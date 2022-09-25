@@ -45,17 +45,18 @@ UD = Data_Construction()
 def date_keys(day, month, year, delta):
     date = Date_Generator()
     return date.date_input(day, month, year, delta)
-date_list = date_keys(1,8,2019,30)
+date_list = date_keys(25,7,2022,0)
+
 print(date_list)
+driver = webdriver.Chrome()
+driver.get("https://eapps.courts.state.va.us/gdcourts/welcomePage.do?") 
+time.sleep(random.randint(0,2))
+driver.find_element(by=By.XPATH, value=x_path_select_court).click()
+time.sleep(random.randint(0,2))
+driver.find_element(by=By.XPATH, value=court_name).click() #find WJCC Court
 
 def search_UD(i):
     condition = True
-    driver = webdriver.Chrome()
-    driver.get("https://eapps.courts.state.va.us/gdcourts/welcomePage.do?") 
-    time.sleep(random.randint(0,2))
-    driver.find_element(by=By.XPATH, value=x_path_select_court).click()
-    time.sleep(random.randint(0,2))
-    driver.find_element(by=By.XPATH, value=court_name).click()
     time.sleep(1)
     driver.find_element(by=By.XPATH, value=x_path_search_tab).click()
     time.sleep(random.randint(0,2))
@@ -77,7 +78,6 @@ def search_UD(i):
                    UD.clean_data(raw_data,date_list[i])
            if "caseInfoScrollForward" not in driver.page_source:
                condition = False
-               driver.quit()
            elif "caseInfoScrollForward"in driver.page_source and "caseInfoScrollBack" in driver.page_source:
                driver.find_element(By.XPATH, x_path_2).click()
                
